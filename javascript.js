@@ -111,17 +111,49 @@
 
 // arr.sort(compareNumeric);
 
-// console.log(arr);  // 1, 2, 15
-let prices1 = [0,7,8, 1, 5, 3, 6, 4]
-let prices2 = [7, 6, 5, 4, 3, 1]
-let maxProfit = function (prices) {
-let result = 0;
-for( let i = 0; i < prices.length; i++){
-if(prices[i] > prices[i-1]){
-  result += prices[i] - prices[i-1]
-}
-}
-return result
-};
-console.log(maxProfit(prices1))
+//-----------------задача на акции https://www.youtube.com/watch?v=MznMhfjkoQ4&list=PL0k-9Y7O1GwccXKHRzmvVj17yB7T9pjTo
+// let prices1 = [2,0,7,8, 1, 5, 3, 6, 4]
+// let prices2 = [7, 6, 5, 4, 3, 1]
+// let maxProfit = function (prices) {
+// let result = 0;
+// for( let i = 0; i < prices.length; i++){
+// if(prices[i] > prices[i+1]){
+//   result += prices[i] - prices[i+1]
+// }
+// }
+// return result
+// };
+// console.log(maxProfit(prices1))
 // console.log(maxProfit(prices2))
+
+//----------------- задача "контейнер с водой" https://www.youtube.com/watch?v=GoQFtH5MXLE&list=PL0k-9Y7O1GwccXKHRzmvVj17yB7T9pjTo&index=3
+
+// const input1 = [1,8,6,2,5,4,8,3,7];
+// const input2 = [1,1];
+// const input3 = [4,3,2,1,4];
+// const input4 = [1,2,1];
+// function maxArea(height){
+//     let maxArea = 0;
+//     let left = 0;
+//     let right = height.length-1;
+// while (left < right){
+//   let currentVolume = Math.min(height[left], height[right]) * (right - left);
+//   maxArea = Math.max(maxArea, currentVolume);
+
+//   if(height[left] < height[right]){
+//     left +=1;
+//   }else{
+//     right-=1;
+//   }
+// }
+// return maxArea
+// }
+// console.log(maxArea(input1))
+// console.log(maxArea(input2))
+// console.log(maxArea(input3))
+// console.log(maxArea(input4))
+let Obj = {
+  name: 123,
+  asd: 12322,
+}
+console.log(Obj[1])

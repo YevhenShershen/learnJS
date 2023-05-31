@@ -31,6 +31,4 @@ console.log(x, y, z);
 // то значение которое было приписано переменной останется
 let { age: a = "Jackson", surname: b = "Jakubowski" } = person;
 console.log(a, b);
-//вытягивает данные со свойство age в age2 и остаток объекта передает в переменную person2
-let { age: age2, ...person2 } = person;
-console.log(age2, person2);
+

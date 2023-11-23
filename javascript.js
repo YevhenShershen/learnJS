@@ -44,7 +44,6 @@
 // //   console.log(value)
 // // }
 
-
 // //==============================================================================================
 // //Методы массива
 // // arr.forEach(function(item, i, arr){
@@ -98,7 +97,6 @@
 // arr3= arr.concat(arr, arr2, 123, 'dasfs')
 // arr.forEach((item) => {
 //   console.log(item);
-
 
 // });
 // function compareNumeric(a, b) {
@@ -155,5 +153,12 @@
 let Obj = {
   name: 123,
   asd: 12322,
-}
-console.log(Obj[1])
+};
+console.log(Obj[1]);
+
+let a = [1, 2, 55, 66, 222, 22, 3];
+var max = a.reduce(function (x, y) {
+  return x > y ? x : y;
+});
+console.log(max);
+
